@@ -191,7 +191,10 @@
 			Controls.Add(groupBoxInput_CMV);
 			Controls.Add(buttonHelp_CMV);
 			Controls.Add(buttonDone_CMV);
+			FormBorderStyle = FormBorderStyle.Fixed3D;
+			MaximizeBox = false;
 			Name = "FormMain";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Спринт 6 | Таск 1 | Вариант 14 | Чигуров М. В. ";
 			groupBoxСondition_CMV.ResumeLayout(false);
 			groupBoxСondition_CMV.PerformLayout();
