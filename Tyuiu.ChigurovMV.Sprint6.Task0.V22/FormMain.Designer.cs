@@ -29,169 +29,169 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-			groupBoxСondition = new GroupBox();
-			textBoxTask = new TextBox();
-			pictureBoxFormula = new PictureBox();
-			groupBoxInput = new GroupBox();
-			labelVarX = new Label();
-			textBoxVarX = new TextBox();
-			groupBoxOutput = new GroupBox();
-			labelResult = new Label();
-			textBoxResult = new TextBox();
-			buttonDone = new Button();
-			buttonHelp = new Button();
-			groupBoxСondition.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBoxFormula).BeginInit();
-			groupBoxInput.SuspendLayout();
-			groupBoxOutput.SuspendLayout();
+			groupBoxСondition_CMV = new GroupBox();
+			textBoxTask_CMV = new TextBox();
+			pictureBoxFormula_CMV = new PictureBox();
+			groupBoxInput_CMV = new GroupBox();
+			labelVarX_CMV = new Label();
+			textBoxVarX_CMV = new TextBox();
+			groupBoxOutput_CMV = new GroupBox();
+			labelResult_CMV = new Label();
+			textBoxResult_CMV = new TextBox();
+			buttonDone_CMV = new Button();
+			buttonHelp_CMV = new Button();
+			groupBoxСondition_CMV.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBoxFormula_CMV).BeginInit();
+			groupBoxInput_CMV.SuspendLayout();
+			groupBoxOutput_CMV.SuspendLayout();
 			SuspendLayout();
 			// 
-			// groupBoxСondition
+			// groupBoxСondition_CMV
 			// 
-			groupBoxСondition.Controls.Add(textBoxTask);
-			groupBoxСondition.Controls.Add(pictureBoxFormula);
-			groupBoxСondition.Location = new Point(12, 12);
-			groupBoxСondition.Name = "groupBoxСondition";
-			groupBoxСondition.Size = new Size(445, 174);
-			groupBoxСondition.TabIndex = 0;
-			groupBoxСondition.TabStop = false;
-			groupBoxСondition.Tag = "";
-			groupBoxСondition.Text = "Условие";
+			groupBoxСondition_CMV.Controls.Add(textBoxTask_CMV);
+			groupBoxСondition_CMV.Controls.Add(pictureBoxFormula_CMV);
+			groupBoxСondition_CMV.Location = new Point(12, 12);
+			groupBoxСondition_CMV.Name = "groupBoxСondition_CMV";
+			groupBoxСondition_CMV.Size = new Size(445, 174);
+			groupBoxСondition_CMV.TabIndex = 0;
+			groupBoxСondition_CMV.TabStop = false;
+			groupBoxСondition_CMV.Tag = "";
+			groupBoxСondition_CMV.Text = "Условие";
 			// 
-			// textBoxTask
+			// textBoxTask_CMV
 			// 
-			textBoxTask.BorderStyle = BorderStyle.None;
-			textBoxTask.Location = new Point(6, 22);
-			textBoxTask.Multiline = true;
-			textBoxTask.Name = "textBoxTask";
-			textBoxTask.ReadOnly = true;
-			textBoxTask.Size = new Size(217, 145);
-			textBoxTask.TabIndex = 0;
-			textBoxTask.TabStop = false;
-			textBoxTask.Text = "Вычислить выражение по формуле";
+			textBoxTask_CMV.BorderStyle = BorderStyle.None;
+			textBoxTask_CMV.Location = new Point(6, 22);
+			textBoxTask_CMV.Multiline = true;
+			textBoxTask_CMV.Name = "textBoxTask_CMV";
+			textBoxTask_CMV.ReadOnly = true;
+			textBoxTask_CMV.Size = new Size(217, 145);
+			textBoxTask_CMV.TabIndex = 0;
+			textBoxTask_CMV.TabStop = false;
+			textBoxTask_CMV.Text = "Вычислить выражение по формуле";
 			// 
-			// pictureBoxFormula
+			// pictureBoxFormula_CMV
 			// 
-			pictureBoxFormula.Image = (Image)resources.GetObject("pictureBoxFormula.Image");
-			pictureBoxFormula.Location = new Point(244, 22);
-			pictureBoxFormula.Name = "pictureBoxFormula";
-			pictureBoxFormula.Size = new Size(192, 36);
-			pictureBoxFormula.TabIndex = 1;
-			pictureBoxFormula.TabStop = false;
+			pictureBoxFormula_CMV.Image = (Image)resources.GetObject("pictureBoxFormula_CMV.Image");
+			pictureBoxFormula_CMV.Location = new Point(244, 22);
+			pictureBoxFormula_CMV.Name = "pictureBoxFormula_CMV";
+			pictureBoxFormula_CMV.Size = new Size(192, 36);
+			pictureBoxFormula_CMV.TabIndex = 1;
+			pictureBoxFormula_CMV.TabStop = false;
 			// 
-			// groupBoxInput
+			// groupBoxInput_CMV
 			// 
-			groupBoxInput.Controls.Add(labelVarX);
-			groupBoxInput.Controls.Add(textBoxVarX);
-			groupBoxInput.Location = new Point(16, 211);
-			groupBoxInput.Name = "groupBoxInput";
-			groupBoxInput.Size = new Size(195, 101);
-			groupBoxInput.TabIndex = 2;
-			groupBoxInput.TabStop = false;
-			groupBoxInput.Text = "Ввод данных";
+			groupBoxInput_CMV.Controls.Add(labelVarX_CMV);
+			groupBoxInput_CMV.Controls.Add(textBoxVarX_CMV);
+			groupBoxInput_CMV.Location = new Point(16, 211);
+			groupBoxInput_CMV.Name = "groupBoxInput_CMV";
+			groupBoxInput_CMV.Size = new Size(195, 101);
+			groupBoxInput_CMV.TabIndex = 2;
+			groupBoxInput_CMV.TabStop = false;
+			groupBoxInput_CMV.Text = "Ввод данных";
 			// 
-			// labelVarX
+			// labelVarX_CMV
 			// 
-			labelVarX.AutoSize = true;
-			labelVarX.Location = new Point(6, 51);
-			labelVarX.Name = "labelVarX";
-			labelVarX.Size = new Size(89, 15);
-			labelVarX.TabIndex = 6;
-			labelVarX.Text = "Переменная X:";
+			labelVarX_CMV.AutoSize = true;
+			labelVarX_CMV.Location = new Point(6, 51);
+			labelVarX_CMV.Name = "labelVarX_CMV";
+			labelVarX_CMV.Size = new Size(89, 15);
+			labelVarX_CMV.TabIndex = 6;
+			labelVarX_CMV.Text = "Переменная X:";
 			// 
-			// textBoxVarX
+			// textBoxVarX_CMV
 			// 
-			textBoxVarX.Location = new Point(6, 72);
-			textBoxVarX.Name = "textBoxVarX";
-			textBoxVarX.Size = new Size(126, 23);
-			textBoxVarX.TabIndex = 0;
-			textBoxVarX.KeyPress += textBoxVarX_KeyPress;
+			textBoxVarX_CMV.Location = new Point(6, 72);
+			textBoxVarX_CMV.Name = "textBoxVarX_CMV";
+			textBoxVarX_CMV.Size = new Size(126, 23);
+			textBoxVarX_CMV.TabIndex = 0;
+			textBoxVarX_CMV.KeyPress += textBoxVarX_KeyPress;
 			// 
-			// groupBoxOutput
+			// groupBoxOutput_CMV
 			// 
-			groupBoxOutput.Controls.Add(labelResult);
-			groupBoxOutput.Controls.Add(textBoxResult);
-			groupBoxOutput.Location = new Point(256, 211);
-			groupBoxOutput.Name = "groupBoxOutput";
-			groupBoxOutput.Size = new Size(192, 101);
-			groupBoxOutput.TabIndex = 3;
-			groupBoxOutput.TabStop = false;
-			groupBoxOutput.Text = "Вывод данных";
+			groupBoxOutput_CMV.Controls.Add(labelResult_CMV);
+			groupBoxOutput_CMV.Controls.Add(textBoxResult_CMV);
+			groupBoxOutput_CMV.Location = new Point(256, 211);
+			groupBoxOutput_CMV.Name = "groupBoxOutput_CMV";
+			groupBoxOutput_CMV.Size = new Size(192, 101);
+			groupBoxOutput_CMV.TabIndex = 3;
+			groupBoxOutput_CMV.TabStop = false;
+			groupBoxOutput_CMV.Text = "Вывод данных";
 			// 
-			// labelResult
+			// labelResult_CMV
 			// 
-			labelResult.AutoSize = true;
-			labelResult.Location = new Point(6, 51);
-			labelResult.Name = "labelResult";
-			labelResult.Size = new Size(63, 15);
-			labelResult.TabIndex = 8;
-			labelResult.Text = "Результат:";
+			labelResult_CMV.AutoSize = true;
+			labelResult_CMV.Location = new Point(6, 51);
+			labelResult_CMV.Name = "labelResult_CMV";
+			labelResult_CMV.Size = new Size(63, 15);
+			labelResult_CMV.TabIndex = 8;
+			labelResult_CMV.Text = "Результат:";
 			// 
-			// textBoxResult
+			// textBoxResult_CMV
 			// 
-			textBoxResult.Location = new Point(6, 72);
-			textBoxResult.Name = "textBoxResult";
-			textBoxResult.ReadOnly = true;
-			textBoxResult.Size = new Size(180, 23);
-			textBoxResult.TabIndex = 7;
+			textBoxResult_CMV.Location = new Point(6, 72);
+			textBoxResult_CMV.Name = "textBoxResult_CMV";
+			textBoxResult_CMV.ReadOnly = true;
+			textBoxResult_CMV.Size = new Size(180, 23);
+			textBoxResult_CMV.TabIndex = 7;
 			// 
-			// buttonDone
+			// buttonDone_CMV
 			// 
-			buttonDone.Location = new Point(318, 332);
-			buttonDone.Name = "buttonDone";
-			buttonDone.Size = new Size(130, 28);
-			buttonDone.TabIndex = 4;
-			buttonDone.Text = "Выполнить";
-			buttonDone.UseVisualStyleBackColor = true;
-			buttonDone.Click += buttonDone_Click;
+			buttonDone_CMV.Location = new Point(318, 332);
+			buttonDone_CMV.Name = "buttonDone_CMV";
+			buttonDone_CMV.Size = new Size(130, 28);
+			buttonDone_CMV.TabIndex = 4;
+			buttonDone_CMV.Text = "Выполнить";
+			buttonDone_CMV.UseVisualStyleBackColor = true;
+			buttonDone_CMV.Click += buttonDone_Click;
 			// 
-			// buttonHelp
+			// buttonHelp_CMV
 			// 
-			buttonHelp.Location = new Point(284, 332);
-			buttonHelp.Name = "buttonHelp";
-			buttonHelp.Size = new Size(28, 28);
-			buttonHelp.TabIndex = 5;
-			buttonHelp.Text = "?";
-			buttonHelp.UseVisualStyleBackColor = true;
-			buttonHelp.Click += buttonHelp_Click;
+			buttonHelp_CMV.Location = new Point(284, 332);
+			buttonHelp_CMV.Name = "buttonHelp_CMV";
+			buttonHelp_CMV.Size = new Size(28, 28);
+			buttonHelp_CMV.TabIndex = 5;
+			buttonHelp_CMV.Text = "?";
+			buttonHelp_CMV.UseVisualStyleBackColor = true;
+			buttonHelp_CMV.Click += buttonHelp_Click;
 			// 
 			// FormMain
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(460, 383);
-			Controls.Add(buttonHelp);
-			Controls.Add(buttonDone);
-			Controls.Add(groupBoxOutput);
-			Controls.Add(groupBoxInput);
-			Controls.Add(groupBoxСondition);
+			Controls.Add(buttonHelp_CMV);
+			Controls.Add(buttonDone_CMV);
+			Controls.Add(groupBoxOutput_CMV);
+			Controls.Add(groupBoxInput_CMV);
+			Controls.Add(groupBoxСondition_CMV);
 			FormBorderStyle = FormBorderStyle.FixedSingle;
 			MaximizeBox = false;
 			Name = "FormMain";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Спринт 6 | Таск 0 | Вариант 22 | Чигуров М. В. ";
-			groupBoxСondition.ResumeLayout(false);
-			groupBoxСondition.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBoxFormula).EndInit();
-			groupBoxInput.ResumeLayout(false);
-			groupBoxInput.PerformLayout();
-			groupBoxOutput.ResumeLayout(false);
-			groupBoxOutput.PerformLayout();
+			groupBoxСondition_CMV.ResumeLayout(false);
+			groupBoxСondition_CMV.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBoxFormula_CMV).EndInit();
+			groupBoxInput_CMV.ResumeLayout(false);
+			groupBoxInput_CMV.PerformLayout();
+			groupBoxOutput_CMV.ResumeLayout(false);
+			groupBoxOutput_CMV.PerformLayout();
 			ResumeLayout(false);
 		}
 
 		#endregion
 
-		private GroupBox groupBoxСondition;
-		private PictureBox pictureBoxFormula;
-		private GroupBox groupBoxInput;
-		private GroupBox groupBoxOutput;
-		private Button buttonDone;
-		private TextBox textBoxTask;
-		private TextBox textBoxVarX;
-		private Label labelVarX;
-		private Label labelResult;
-		private TextBox textBoxResult;
-		private Button buttonHelp;
+		private GroupBox groupBoxСondition_CMV;
+		private PictureBox pictureBoxFormula_CMV;
+		private GroupBox groupBoxInput_CMV;
+		private GroupBox groupBoxOutput_CMV;
+		private Button buttonDone_CMV;
+		private TextBox textBoxTask_CMV;
+		private TextBox textBoxVarX_CMV;
+		private Label labelVarX_CMV;
+		private Label labelResult_CMV;
+		private TextBox textBoxResult_CMV;
+		private Button buttonHelp_CMV;
 	}
 }
