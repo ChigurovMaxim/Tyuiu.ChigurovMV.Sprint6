@@ -29,6 +29,8 @@
 		private void InitializeComponent()
 		{
 			textBox1 = new TextBox();
+			dataGridView1 = new DataGridView();
+			((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
 			SuspendLayout();
 			// 
 			// textBox1
@@ -40,14 +42,24 @@
 			textBox1.TabIndex = 0;
 			textBox1.Text = "Привет мир";
 			// 
+			// dataGridView1
+			// 
+			dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridView1.Location = new Point(119, 132);
+			dataGridView1.Name = "dataGridView1";
+			dataGridView1.Size = new Size(240, 150);
+			dataGridView1.TabIndex = 1;
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(800, 450);
+			Controls.Add(dataGridView1);
 			Controls.Add(textBox1);
 			Name = "Form1";
 			Text = "Form1";
+			((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -55,5 +67,6 @@
 		#endregion
 
 		private TextBox textBox1;
+		private DataGridView dataGridView1;
 	}
 }
