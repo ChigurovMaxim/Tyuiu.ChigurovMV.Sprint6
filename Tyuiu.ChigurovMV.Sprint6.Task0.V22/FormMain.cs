@@ -30,7 +30,7 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task0.V22
 
 		private void buttonHelp_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Таск 0 выполнил студент группы ПКТб-24-1 Чигуров Максим Владиславович", "Сообщение");
+			MessageBox.Show("Таск 0 выполнил студент группы ПКТб-24-1 Чигуров Максим Владиславович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
 		
