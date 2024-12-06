@@ -20,7 +20,6 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task2.V15
 				int startValue = Convert.ToInt32(textBoxStartValue_CMV.Text);
 				int stopValue = Convert.ToInt32(textBoxStopValue_CMV.Text);
 
-				string strLine;
 
 				int len = ds.GetMassFunction(startValue, stopValue).Length;
 
