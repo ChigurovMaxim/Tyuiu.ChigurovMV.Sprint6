@@ -12,8 +12,11 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task2.V15
 
 		private void butttonDone_Click(object sender, EventArgs e)
 		{
+
 			try
 			{
+				this.chartFunction_CMV.Series[0].Points.Clear();
+				this.chartFunction_CMV.Titles.Clear();
 				int startValue = Convert.ToInt32(textBoxStartValue_CMV.Text);
 				int stopValue = Convert.ToInt32(textBoxStopValue_CMV.Text);
 
