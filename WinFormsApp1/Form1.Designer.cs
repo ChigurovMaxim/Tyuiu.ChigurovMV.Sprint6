@@ -30,6 +30,7 @@
 		{
 			textBox1 = new TextBox();
 			dataGridView1 = new DataGridView();
+			comboBox1 = new ComboBox();
 			((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
 			SuspendLayout();
 			// 
@@ -50,11 +51,21 @@
 			dataGridView1.Size = new Size(240, 150);
 			dataGridView1.TabIndex = 1;
 			// 
+			// comboBox1
+			// 
+			comboBox1.FormattingEnabled = true;
+			comboBox1.Location = new Point(435, 132);
+			comboBox1.Name = "comboBox1";
+			comboBox1.Size = new Size(121, 23);
+			comboBox1.TabIndex = 2;
+			comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(800, 450);
+			Controls.Add(comboBox1);
 			Controls.Add(dataGridView1);
 			Controls.Add(textBox1);
 			Name = "Form1";
@@ -68,5 +79,6 @@
 
 		private TextBox textBox1;
 		private DataGridView dataGridView1;
+		private ComboBox comboBox1;
 	}
 }
