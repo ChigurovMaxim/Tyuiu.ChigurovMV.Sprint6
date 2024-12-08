@@ -59,5 +59,35 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task6.V20.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documentediting_editdocuments_text_documentedi_2820 {
+            get {
+                object obj = ResourceManager.GetObject("documentediting_editdocuments_text_documentedi_2820", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mark_13708504 {
+            get {
+                object obj = ResourceManager.GetObject("mark_13708504", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Open_icon_icons_com_73704 {
+            get {
+                object obj = ResourceManager.GetObject("Open_icon-icons.com_73704", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

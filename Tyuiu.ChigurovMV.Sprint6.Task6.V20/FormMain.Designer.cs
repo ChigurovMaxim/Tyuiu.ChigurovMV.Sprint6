@@ -70,7 +70,7 @@
 			// buttonDone_CMV
 			// 
 			buttonDone_CMV.BackColor = Color.White;
-			buttonDone_CMV.BackgroundImage = (Image)resources.GetObject("buttonDone_CMV.BackgroundImage");
+			buttonDone_CMV.BackgroundImage = Properties.Resources.documentediting_editdocuments_text_documentedi_2820;
 			buttonDone_CMV.BackgroundImageLayout = ImageLayout.Zoom;
 			buttonDone_CMV.Cursor = Cursors.Hand;
 			buttonDone_CMV.Enabled = false;
@@ -85,7 +85,7 @@
 			// buttonOpenFile_CMV
 			// 
 			buttonOpenFile_CMV.BackColor = Color.White;
-			buttonOpenFile_CMV.BackgroundImage = (Image)resources.GetObject("buttonOpenFile_CMV.BackgroundImage");
+			buttonOpenFile_CMV.BackgroundImage = Properties.Resources.Open_icon_icons_com_73704;
 			buttonOpenFile_CMV.BackgroundImageLayout = ImageLayout.Zoom;
 			buttonOpenFile_CMV.Cursor = Cursors.Hand;
 			buttonOpenFile_CMV.Location = new Point(17, 12);
@@ -101,7 +101,7 @@
 			// 
 			buttonHelp_CMV.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 			buttonHelp_CMV.BackColor = Color.White;
-			buttonHelp_CMV.BackgroundImage = (Image)resources.GetObject("buttonHelp_CMV.BackgroundImage");
+			buttonHelp_CMV.BackgroundImage = Properties.Resources.mark_13708504;
 			buttonHelp_CMV.BackgroundImageLayout = ImageLayout.Zoom;
 			buttonHelp_CMV.Cursor = Cursors.Hand;
 			buttonHelp_CMV.Location = new Point(729, 12);
