@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.ChigurovMV.Sprint6.Task6.V20
+﻿namespace Tyuiu.ChigurovMV.Sprint6.Task7.V24
 {
 	partial class FormMain
 	{
@@ -31,23 +31,27 @@
 			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
 			panelTop_CMV = new Panel();
+			buttonSaveFile_CMV = new Button();
 			buttonDone_CMV = new Button();
 			buttonOpenFile_CMV = new Button();
 			buttonHelp_CMV = new Button();
 			groupBoxTask_CMV = new GroupBox();
 			textBoxTask_CMV = new TextBox();
 			groupBoxInput_CMV = new GroupBox();
-			textBoxInput_CMV = new TextBox();
+			dataGridViewIn_CMV = new DataGridView();
 			groupBoxOutput_CMV = new GroupBox();
-			textBoxOutput_CMV = new TextBox();
+			dataGridViewOut_CMV = new DataGridView();
 			openFileDialogTask = new OpenFileDialog();
 			toolTipTask = new ToolTip(components);
 			panelPredTop_CMV = new Panel();
 			splitContainer_CMV = new SplitContainer();
+			saveFileDialogMatrix = new SaveFileDialog();
 			panelTop_CMV.SuspendLayout();
 			groupBoxTask_CMV.SuspendLayout();
 			groupBoxInput_CMV.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)dataGridViewIn_CMV).BeginInit();
 			groupBoxOutput_CMV.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)dataGridViewOut_CMV).BeginInit();
 			panelPredTop_CMV.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)splitContainer_CMV).BeginInit();
 			splitContainer_CMV.Panel1.SuspendLayout();
@@ -58,6 +62,7 @@
 			// panelTop_CMV
 			// 
 			panelTop_CMV.BackColor = Color.White;
+			panelTop_CMV.Controls.Add(buttonSaveFile_CMV);
 			panelTop_CMV.Controls.Add(buttonDone_CMV);
 			panelTop_CMV.Controls.Add(buttonOpenFile_CMV);
 			panelTop_CMV.Controls.Add(buttonHelp_CMV);
@@ -67,6 +72,22 @@
 			panelTop_CMV.Size = new Size(809, 88);
 			panelTop_CMV.TabIndex = 3;
 			// 
+			// buttonSaveFile_CMV
+			// 
+			buttonSaveFile_CMV.BackColor = Color.White;
+			buttonSaveFile_CMV.BackgroundImage = Properties.Resources.Blu_Ray_Save_48x48;
+			buttonSaveFile_CMV.BackgroundImageLayout = ImageLayout.Zoom;
+			buttonSaveFile_CMV.Cursor = Cursors.Hand;
+			buttonSaveFile_CMV.Enabled = false;
+			buttonSaveFile_CMV.FlatStyle = FlatStyle.Flat;
+			buttonSaveFile_CMV.Location = new Point(161, 12);
+			buttonSaveFile_CMV.Name = "buttonSaveFile_CMV";
+			buttonSaveFile_CMV.Size = new Size(66, 65);
+			buttonSaveFile_CMV.TabIndex = 4;
+			buttonSaveFile_CMV.UseVisualStyleBackColor = false;
+			buttonSaveFile_CMV.Click += buttonSaveFile_Click;
+			buttonSaveFile_CMV.MouseEnter += buttonSaveFile_CMV_MouseEnter;
+			// 
 			// buttonDone_CMV
 			// 
 			buttonDone_CMV.BackColor = Color.White;
@@ -74,6 +95,7 @@
 			buttonDone_CMV.BackgroundImageLayout = ImageLayout.Zoom;
 			buttonDone_CMV.Cursor = Cursors.Hand;
 			buttonDone_CMV.Enabled = false;
+			buttonDone_CMV.FlatStyle = FlatStyle.Flat;
 			buttonDone_CMV.Location = new Point(89, 12);
 			buttonDone_CMV.Name = "buttonDone_CMV";
 			buttonDone_CMV.Size = new Size(66, 65);
@@ -81,6 +103,7 @@
 			toolTipTask.SetToolTip(buttonDone_CMV, "Произвести обработку файла");
 			buttonDone_CMV.UseVisualStyleBackColor = false;
 			buttonDone_CMV.Click += buttonDone_Click;
+			buttonDone_CMV.MouseEnter += buttonDone_CMV_MouseEnter;
 			// 
 			// buttonOpenFile_CMV
 			// 
@@ -88,14 +111,16 @@
 			buttonOpenFile_CMV.BackgroundImage = Properties.Resources.Open_icon_icons_com_73704;
 			buttonOpenFile_CMV.BackgroundImageLayout = ImageLayout.Zoom;
 			buttonOpenFile_CMV.Cursor = Cursors.Hand;
+			buttonOpenFile_CMV.FlatStyle = FlatStyle.Flat;
 			buttonOpenFile_CMV.Location = new Point(17, 12);
 			buttonOpenFile_CMV.Name = "buttonOpenFile_CMV";
 			buttonOpenFile_CMV.Size = new Size(66, 65);
 			buttonOpenFile_CMV.TabIndex = 5;
 			buttonOpenFile_CMV.Text = "\r\n";
-			toolTipTask.SetToolTip(buttonOpenFile_CMV, "Открыть файл\r\nВыберите нужный файл для обработки.\r\n");
+			toolTipTask.SetToolTip(buttonOpenFile_CMV, "\r\n");
 			buttonOpenFile_CMV.UseVisualStyleBackColor = false;
 			buttonOpenFile_CMV.Click += buttonOpenFile_Click;
+			buttonOpenFile_CMV.MouseEnter += buttonOpenFile_CMV_MouseEnter;
 			// 
 			// buttonHelp_CMV
 			// 
@@ -110,6 +135,7 @@
 			buttonHelp_CMV.TabIndex = 6;
 			buttonHelp_CMV.UseVisualStyleBackColor = false;
 			buttonHelp_CMV.Click += buttonHelp_Click;
+			buttonHelp_CMV.MouseEnter += buttonHelp_CMV_MouseEnter;
 			// 
 			// groupBoxTask_CMV
 			// 
@@ -137,47 +163,47 @@
 			// 
 			// groupBoxInput_CMV
 			// 
-			groupBoxInput_CMV.Controls.Add(textBoxInput_CMV);
+			groupBoxInput_CMV.Controls.Add(dataGridViewIn_CMV);
 			groupBoxInput_CMV.Dock = DockStyle.Fill;
 			groupBoxInput_CMV.Location = new Point(0, 0);
 			groupBoxInput_CMV.Name = "groupBoxInput_CMV";
-			groupBoxInput_CMV.Size = new Size(269, 371);
+			groupBoxInput_CMV.Size = new Size(388, 371);
 			groupBoxInput_CMV.TabIndex = 0;
 			groupBoxInput_CMV.TabStop = false;
 			groupBoxInput_CMV.Text = "Ввод:";
 			// 
-			// textBoxInput_CMV
+			// dataGridViewIn_CMV
 			// 
-			textBoxInput_CMV.Dock = DockStyle.Fill;
-			textBoxInput_CMV.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			textBoxInput_CMV.Location = new Point(3, 19);
-			textBoxInput_CMV.Multiline = true;
-			textBoxInput_CMV.Name = "textBoxInput_CMV";
-			textBoxInput_CMV.ReadOnly = true;
-			textBoxInput_CMV.Size = new Size(263, 349);
-			textBoxInput_CMV.TabIndex = 0;
+			dataGridViewIn_CMV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridViewIn_CMV.ColumnHeadersVisible = false;
+			dataGridViewIn_CMV.Dock = DockStyle.Fill;
+			dataGridViewIn_CMV.Location = new Point(3, 19);
+			dataGridViewIn_CMV.Name = "dataGridViewIn_CMV";
+			dataGridViewIn_CMV.RowHeadersVisible = false;
+			dataGridViewIn_CMV.Size = new Size(382, 349);
+			dataGridViewIn_CMV.TabIndex = 0;
 			// 
 			// groupBoxOutput_CMV
 			// 
-			groupBoxOutput_CMV.Controls.Add(textBoxOutput_CMV);
+			groupBoxOutput_CMV.Controls.Add(dataGridViewOut_CMV);
 			groupBoxOutput_CMV.Dock = DockStyle.Fill;
 			groupBoxOutput_CMV.Location = new Point(0, 0);
 			groupBoxOutput_CMV.Name = "groupBoxOutput_CMV";
-			groupBoxOutput_CMV.Size = new Size(536, 371);
+			groupBoxOutput_CMV.Size = new Size(417, 371);
 			groupBoxOutput_CMV.TabIndex = 0;
 			groupBoxOutput_CMV.TabStop = false;
 			groupBoxOutput_CMV.Text = "Вывод:";
 			// 
-			// textBoxOutput_CMV
+			// dataGridViewOut_CMV
 			// 
-			textBoxOutput_CMV.Dock = DockStyle.Fill;
-			textBoxOutput_CMV.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			textBoxOutput_CMV.Location = new Point(3, 19);
-			textBoxOutput_CMV.Multiline = true;
-			textBoxOutput_CMV.Name = "textBoxOutput_CMV";
-			textBoxOutput_CMV.ReadOnly = true;
-			textBoxOutput_CMV.Size = new Size(530, 349);
-			textBoxOutput_CMV.TabIndex = 0;
+			dataGridViewOut_CMV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridViewOut_CMV.ColumnHeadersVisible = false;
+			dataGridViewOut_CMV.Dock = DockStyle.Fill;
+			dataGridViewOut_CMV.Location = new Point(3, 19);
+			dataGridViewOut_CMV.Name = "dataGridViewOut_CMV";
+			dataGridViewOut_CMV.RowHeadersVisible = false;
+			dataGridViewOut_CMV.Size = new Size(411, 349);
+			dataGridViewOut_CMV.TabIndex = 0;
 			// 
 			// openFileDialogTask
 			// 
@@ -185,6 +211,7 @@
 			// 
 			// toolTipTask
 			// 
+			toolTipTask.IsBalloon = true;
 			toolTipTask.ToolTipIcon = ToolTipIcon.Info;
 			toolTipTask.ToolTipTitle = "Подсказка";
 			// 
@@ -211,7 +238,7 @@
 			// 
 			splitContainer_CMV.Panel2.Controls.Add(groupBoxOutput_CMV);
 			splitContainer_CMV.Size = new Size(809, 371);
-			splitContainer_CMV.SplitterDistance = 269;
+			splitContainer_CMV.SplitterDistance = 388;
 			splitContainer_CMV.TabIndex = 5;
 			// 
 			// FormMain
@@ -225,15 +252,16 @@
 			MinimumSize = new Size(825, 598);
 			Name = "FormMain";
 			StartPosition = FormStartPosition.CenterScreen;
-			Text = "Спринт 6 | Таск 6 | Вариант 20 | Чигуров М. В. ";
+			Text = "Спринт 6 | Таск 7 | Вариант 24 | Чигуров М. В. ";
+			WindowState = FormWindowState.Maximized;
 			Load += FormMain_Load;
 			panelTop_CMV.ResumeLayout(false);
 			groupBoxTask_CMV.ResumeLayout(false);
 			groupBoxTask_CMV.PerformLayout();
 			groupBoxInput_CMV.ResumeLayout(false);
-			groupBoxInput_CMV.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)dataGridViewIn_CMV).EndInit();
 			groupBoxOutput_CMV.ResumeLayout(false);
-			groupBoxOutput_CMV.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)dataGridViewOut_CMV).EndInit();
 			panelPredTop_CMV.ResumeLayout(false);
 			splitContainer_CMV.Panel1.ResumeLayout(false);
 			splitContainer_CMV.Panel2.ResumeLayout(false);
@@ -254,9 +282,11 @@
 		private GroupBox groupBoxInput_CMV;
 		private ToolTip toolTipTask;
 		private OpenFileDialog openFileDialogTask;
-		private TextBox textBoxInput_CMV;
-		private TextBox textBoxOutput_CMV;
 		private Panel panelPredTop_CMV;
 		private SplitContainer splitContainer_CMV;
+		private Button buttonSaveFile_CMV;
+		private SaveFileDialog saveFileDialogMatrix;
+		private DataGridView dataGridViewIn_CMV;
+		private DataGridView dataGridViewOut_CMV;
 	}
 }

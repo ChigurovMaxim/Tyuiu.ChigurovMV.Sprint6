@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.ChigurovMV.Sprint6.Task6.V20
+﻿namespace Tyuiu.ChigurovMV.Sprint6.Task7.V24
 {
 	partial class FormAbout
 	{

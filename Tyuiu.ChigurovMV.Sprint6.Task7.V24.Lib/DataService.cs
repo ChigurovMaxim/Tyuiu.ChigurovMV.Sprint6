@@ -1,17 +1,16 @@
-﻿using System.IO;
+﻿using tyuiu.cources.programming.interfaces.Sprint6;
 
-namespace ConsoleApp1
+namespace Tyuiu.ChigurovMV.Sprint6.Task7.V24.Lib
 {
-	internal class Program
+	public class DataService : ISprint6Task7V24
 	{
-		static void Main(string[] args)
+		public int[,] GetMatrix(string path)
 		{
-			string path = @"C:\DataSprint6\InPutDataFileTask7V24.csv";
 			int rows = File.ReadLines(path).Count();
 			string[] strings = File.ReadAllText(path).Split("\n");
 			int columns = strings[0].Split(';').Length;
-			int[,] matrix = new int[rows, columns];
-
+			int[,] matrix = new int[rows,columns];
+			
 			using (StreamReader stream = new StreamReader(path))
 			{
 				string line;
@@ -27,15 +26,11 @@ namespace ConsoleApp1
 				}
 			}
 
-			for (int i = 0; i < rows; i++)
+			for (int j = 0; j < columns; j++)
 			{
-				for (int j = 0; j < columns; j++)
-				{
-					Console.Write(matrix[i, j] + "\t");
-				}
-				Console.WriteLine();
+				if (matrix[1, j] % 2 == 0) matrix[1, j] = 1;
 			}
-
+			return matrix;
 		}
 	}
 }
