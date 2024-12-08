@@ -47,8 +47,8 @@
 			groupBoxResult_CMV = new GroupBox();
 			textBoxResult_CMV = new TextBox();
 			panelFill_CMV = new Panel();
-			chartFunction_CMV = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			splitter_CMV = new Splitter();
+			chartFunction_CMV = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			panelTop_CMV.SuspendLayout();
 			groupBoxInput_CMV.SuspendLayout();
 			groupBoxTask_CMV.SuspendLayout();
@@ -220,6 +220,15 @@
 			panelFill_CMV.Size = new Size(724, 311);
 			panelFill_CMV.TabIndex = 1;
 			// 
+			// splitter_CMV
+			// 
+			splitter_CMV.BackColor = Color.White;
+			splitter_CMV.Location = new Point(0, 0);
+			splitter_CMV.Name = "splitter_CMV";
+			splitter_CMV.Size = new Size(3, 311);
+			splitter_CMV.TabIndex = 2;
+			splitter_CMV.TabStop = false;
+			// 
 			// chartFunction_CMV
 			// 
 			chartArea1.Name = "ChartArea1";
@@ -244,15 +253,6 @@
 			title1.Text = "График функции";
 			chartFunction_CMV.Titles.Add(title1);
 			// 
-			// splitter_CMV
-			// 
-			splitter_CMV.BackColor = Color.White;
-			splitter_CMV.Location = new Point(0, 0);
-			splitter_CMV.Name = "splitter_CMV";
-			splitter_CMV.Size = new Size(3, 311);
-			splitter_CMV.TabIndex = 2;
-			splitter_CMV.TabStop = false;
-			// 
 			// FormMain
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
@@ -264,7 +264,7 @@
 			MinimumSize = new Size(950, 450);
 			Name = "FormMain";
 			StartPosition = FormStartPosition.CenterScreen;
-			Text = "Form1";
+			Text = "Спринт 6 | Таск 4 | Вариант 17 | Чигуров М. В. ";
 			panelTop_CMV.ResumeLayout(false);
 			groupBoxInput_CMV.ResumeLayout(false);
 			groupBoxInput_CMV.PerformLayout();
