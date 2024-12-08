@@ -38,17 +38,17 @@
 			groupBoxTask_CMV = new GroupBox();
 			textBoxTask_CMV = new TextBox();
 			panelSplitContainer_CMV = new Panel();
-			splitContainer1 = new SplitContainer();
+			splitContainer_CMV = new SplitContainer();
 			groupBoxOutput_CMV = new GroupBox();
 			dataGridViewNums = new DataGridView();
 			chartDiag = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			panelTop_CMV.SuspendLayout();
 			groupBoxTask_CMV.SuspendLayout();
 			panelSplitContainer_CMV.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
-			splitContainer1.Panel1.SuspendLayout();
-			splitContainer1.Panel2.SuspendLayout();
-			splitContainer1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)splitContainer_CMV).BeginInit();
+			splitContainer_CMV.Panel1.SuspendLayout();
+			splitContainer_CMV.Panel2.SuspendLayout();
+			splitContainer_CMV.SuspendLayout();
 			groupBoxOutput_CMV.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)dataGridViewNums).BeginInit();
 			((System.ComponentModel.ISupportInitialize)chartDiag).BeginInit();
@@ -127,37 +127,38 @@
 			// 
 			// panelSplitContainer_CMV
 			// 
-			panelSplitContainer_CMV.Controls.Add(splitContainer1);
+			panelSplitContainer_CMV.Controls.Add(splitContainer_CMV);
 			panelSplitContainer_CMV.Dock = DockStyle.Fill;
 			panelSplitContainer_CMV.Location = new Point(0, 100);
 			panelSplitContainer_CMV.Name = "panelSplitContainer_CMV";
 			panelSplitContainer_CMV.Size = new Size(784, 341);
 			panelSplitContainer_CMV.TabIndex = 2;
 			// 
-			// splitContainer1
+			// splitContainer_CMV
 			// 
-			splitContainer1.Dock = DockStyle.Fill;
-			splitContainer1.Location = new Point(0, 0);
-			splitContainer1.Name = "splitContainer1";
+			splitContainer_CMV.Dock = DockStyle.Fill;
+			splitContainer_CMV.Location = new Point(0, 0);
+			splitContainer_CMV.Name = "splitContainer_CMV";
 			// 
-			// splitContainer1.Panel1
+			// splitContainer_CMV.Panel1
 			// 
-			splitContainer1.Panel1.BackColor = Color.White;
-			splitContainer1.Panel1.Controls.Add(groupBoxOutput_CMV);
+			splitContainer_CMV.Panel1.BackColor = Color.White;
+			splitContainer_CMV.Panel1.Controls.Add(groupBoxOutput_CMV);
 			// 
-			// splitContainer1.Panel2
+			// splitContainer_CMV.Panel2
 			// 
-			splitContainer1.Panel2.Controls.Add(chartDiag);
-			splitContainer1.Size = new Size(784, 341);
-			splitContainer1.SplitterDistance = 201;
-			splitContainer1.TabIndex = 0;
+			splitContainer_CMV.Panel2.Controls.Add(chartDiag);
+			splitContainer_CMV.Size = new Size(784, 341);
+			splitContainer_CMV.SplitterDistance = 217;
+			splitContainer_CMV.TabIndex = 0;
 			// 
 			// groupBoxOutput_CMV
 			// 
 			groupBoxOutput_CMV.Controls.Add(dataGridViewNums);
-			groupBoxOutput_CMV.Location = new Point(5, 6);
+			groupBoxOutput_CMV.Dock = DockStyle.Fill;
+			groupBoxOutput_CMV.Location = new Point(0, 0);
 			groupBoxOutput_CMV.Name = "groupBoxOutput_CMV";
-			groupBoxOutput_CMV.Size = new Size(205, 332);
+			groupBoxOutput_CMV.Size = new Size(217, 341);
 			groupBoxOutput_CMV.TabIndex = 0;
 			groupBoxOutput_CMV.TabStop = false;
 			groupBoxOutput_CMV.Text = "Вывод данных:";
@@ -166,10 +167,11 @@
 			// 
 			dataGridViewNums.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			dataGridViewNums.ColumnHeadersVisible = false;
-			dataGridViewNums.Location = new Point(7, 22);
+			dataGridViewNums.Dock = DockStyle.Fill;
+			dataGridViewNums.Location = new Point(3, 19);
 			dataGridViewNums.Name = "dataGridViewNums";
 			dataGridViewNums.RowHeadersVisible = false;
-			dataGridViewNums.Size = new Size(192, 304);
+			dataGridViewNums.Size = new Size(211, 319);
 			dataGridViewNums.TabIndex = 0;
 			// 
 			// chartDiag
@@ -186,7 +188,7 @@
 			series1.Legend = "Legend1";
 			series1.Name = "Series1";
 			chartDiag.Series.Add(series1);
-			chartDiag.Size = new Size(579, 341);
+			chartDiag.Size = new Size(563, 341);
 			chartDiag.TabIndex = 0;
 			// 
 			// FormMain
@@ -204,10 +206,10 @@
 			groupBoxTask_CMV.ResumeLayout(false);
 			groupBoxTask_CMV.PerformLayout();
 			panelSplitContainer_CMV.ResumeLayout(false);
-			splitContainer1.Panel1.ResumeLayout(false);
-			splitContainer1.Panel2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
-			splitContainer1.ResumeLayout(false);
+			splitContainer_CMV.Panel1.ResumeLayout(false);
+			splitContainer_CMV.Panel2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)splitContainer_CMV).EndInit();
+			splitContainer_CMV.ResumeLayout(false);
 			groupBoxOutput_CMV.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)dataGridViewNums).EndInit();
 			((System.ComponentModel.ISupportInitialize)chartDiag).EndInit();
@@ -217,7 +219,7 @@
 		#endregion
 		private Panel panelTop_CMV;
 		private Panel panelSplitContainer_CMV;
-		private SplitContainer splitContainer1;
+		private SplitContainer splitContainer_CMV;
 		private Button buttonDone_CMV;
 		private Button buttonOpenFile_CMV;
 		private Button buttonHelp_CMV;
