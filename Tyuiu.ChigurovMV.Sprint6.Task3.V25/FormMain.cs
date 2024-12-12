@@ -28,15 +28,11 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task3.V25
 			dataGridViewResult_CMV.ColumnCount = cols;
 			dataGridViewResult_CMV.RowCount = rows;
 
-			for (int i = 0; i < cols; i++)
-			{
-				dataGridViewMatrix_CMV.Columns[i].Width = 25;
-				dataGridViewResult_CMV.Columns[i].Width = 25;
-			}
+			dataGridViewMatrix_CMV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridViewResult_CMV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
-	
 
-			for (int i = 0;i < rows; i++)
+            for (int i = 0;i < rows; i++)
 			{
 				for (int j = 0;j < cols; j++)
 				{
@@ -47,7 +43,8 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task3.V25
 
 		private void buttonDone_Click(object sender, EventArgs e)
 		{
-			int[,] resMatrix = ds.Calculate(mtrx);
+            
+            int[,] resMatrix = ds.Calculate(mtrx);
 			int rows = mtrx.GetLength(0);
 			int cols = mtrx.GetLength(1);
 			for (int i = 0; i < rows; i++)

@@ -64,11 +64,8 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task7.V24
 			dataGridViewOut_CMV.ColumnCount = columns;
 			dataGridViewOut_CMV.RowCount = rows;
 
-			for (int i = 0; i < columns; i++)
-			{
-				dataGridViewIn_CMV.Columns[i].Width = 25;
-				dataGridViewOut_CMV.Columns[i].Width = 25;
-			}
+			dataGridViewIn_CMV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+			dataGridViewOut_CMV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
 			for (int r = 0; r < rows; r++)
 			{
@@ -149,6 +146,7 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task7.V24
 		private void buttonOpenFile_CMV_MouseEnter(object sender, EventArgs e)
 		{
 			toolTipTask.ToolTipTitle = "Открыть файл";
+
 		}
 
 		private void buttonSaveFile_CMV_MouseEnter(object sender, EventArgs e)

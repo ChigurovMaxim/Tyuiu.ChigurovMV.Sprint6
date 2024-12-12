@@ -18,8 +18,7 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task5.V25
 			dataGridViewNums.Rows.Clear();
 
 			dataGridViewNums.ColumnCount = 2;
-			dataGridViewNums.Columns[0].Width = 20;
-			dataGridViewNums.Columns[1].Width = 50;
+			dataGridViewNums.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
 			this.chartDiag.ChartAreas[0].AxisX.Title = "Îñü X";
 			this.chartDiag.ChartAreas[0].AxisY.Title = "Îñü Y";

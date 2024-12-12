@@ -1,3 +1,4 @@
+using System.Windows.Forms;
 using Tyuiu.ChigurovMV.Sprint6.Task2.V15.Lib;
 
 namespace Tyuiu.ChigurovMV.Sprint6.Task2.V15
@@ -12,8 +13,8 @@ namespace Tyuiu.ChigurovMV.Sprint6.Task2.V15
 
 		private void butttonDone_Click(object sender, EventArgs e)
 		{
-
-			try
+            dataGridViewFunction_CMV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            try
 			{
 				this.chartFunction_CMV.Series[0].Points.Clear();
 				this.chartFunction_CMV.Titles.Clear();
